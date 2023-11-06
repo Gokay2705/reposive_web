@@ -19,13 +19,38 @@
       nunc. Leo in vitae turpis massa sed. Aliquam malesuada bibendum arcu vitae
       elementum curabitur vitae nunc sed.
     </p>
-    <div>
-      <form>
-        <label for="name">First name:</label><br />
-        <input type="text" id="name" name="name" value="Name" /><br />
-        <label for="name">Last name:</label><br />
-        <input type="text" id="name" name="name" value="Last Name" />
-      </form>
-    </div>
+    <fieldset>
+      <!-- Form -->
+      <!-- Legend: it writes text above the border-->
+      <legend>Your contact information</legend>
+      <!-- Laabel: -->
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" />
+      <label for="phone">Phone number</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Don't forget to add your area code!"
+      />
+      <label for="email">Email</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Don't forget to add your e-mail!"
+      />
+      <br />
+      <hr />
+      <label for="comments">Your Requests:</label>
+      <!-- Message Box-->
+      <textarea
+        id="comments"
+        name="comments"
+        placeholder="Tell me about all things!"
+      ></textarea>
+      <!--End -->
+    </fieldset>
+    <center><button type="submit">Submit</button></center>
   </body>
 </html>
