@@ -1,33 +1,33 @@
+/* Delete space at page */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
+/* Let space around of page */
+html {
+  margin: 1rem;
+}
+/* Background and text default color of page */
 body {
   background-color: #002d62;
   color: aliceblue;
 }
 
-font {
-  border-color: blueviolet;
-  border-radius: 30%;
+/* Text style */
+h1 {
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  color:yellow;
 }
 
 p {
   text-align: justify;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-h1 {
-  text-align: center;
-}
-
+/* Form style */
 fieldset {
-  border: 5px solid black;
+  border: 5px solid yellowgreen;
   border-radius: 10px;
   margin-bottom: 2rem;
 }
@@ -42,11 +42,13 @@ legend {
 }
 
 label {
-  display: inline-block;
+  display:inline-flex;
   padding: 0.3rem;
 }
 
+/* Message Area*/
 textarea {
+  align-self: center;
   height: 10rem;
   padding: 1rem;
 }
