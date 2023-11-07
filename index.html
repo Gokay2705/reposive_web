@@ -7,6 +7,8 @@
     <title>Responsive_Webpage</title>
   </head>
   <body>
+    <!-- Text -->
+    <h1>Wellcome</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Dolor purus non enim
@@ -23,33 +25,21 @@
       <!-- Form -->
       <!-- Legend: it writes text above the border-->
       <legend>Your contact information</legend>
-      <!-- Laabel: -->
+      <!-- Labels -->
       <label for="name">Your name</label>
-      <input type="text" id="name" name="name" />
+      <input type="text" id="name" name="name" placeholder="Full name"/>
       <label for="phone">Phone number</label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="Don't forget to add your area code!"
-      />
+      <input type="tel" id="phone"name="phone" placeholder="Please add your area code!"/>
       <label for="email">Email</label>
-      <input
-        type="text"
-        id="email"
-        name="email"
-        placeholder="Don't forget to add your e-mail!"
-      />
-      <br />
-      <hr />
-      <label for="comments">Your Requests:</label>
+      <input type="text" id="email" name="email" placeholder="Please add your e-mail!"/>
+      <!-- Message Area-->
+      <center>
+      <legend>Your Requests</legend>
+      <label for="comments"></label>
       <!-- Message Box-->
-      <textarea
-        id="comments"
-        name="comments"
-        placeholder="Tell me about all things!"
-      ></textarea>
-      <!--End -->
+      <textarea id="comments" name="comments" placeholder="Please tell me about all things!"></textarea>
+      <!-- Form End -->
+      </center>
     </fieldset>
     <center><button type="submit">Submit</button></center>
   </body>
