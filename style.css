@@ -18,11 +18,13 @@ body {
 h1 {
   text-align: center;
   font-family: "Shadows Into Light", cursive;
-  color:yellow;
+  color: yellow;
+  font-size: 3rem;
 }
 
 p {
   text-align: justify;
+  font-size: 1.2rem;
 }
 
 /* Form style */
@@ -42,20 +44,27 @@ legend {
 }
 
 label {
-  display:inline-flex;
+  display: inline-flex;
   padding: 0.3rem;
 }
 
 /* Message Area*/
 
 textarea {
-  align-self:center;
+  align-self: center;
   padding: 1rem;
   box-sizing: content-box;
   width: 70%;
 }
 
+/* Submit button*/
 button:hover {
   color: whitesmoke;
   background-color: yellowgreen;
+}
+
+/* nav menu*/
+nav {
+  color: aliceblue;
+  font-size: 1.2em; 
 }

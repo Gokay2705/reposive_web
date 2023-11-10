@@ -7,7 +7,7 @@
     <title>Responsive_Webpage</title>
   </head>
   <body>
-    <nav>
+    <nav id="navbar" class="w3-show">
       <a class="active" href="#home">Home</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
@@ -33,17 +33,31 @@
       <legend>Your contact information</legend>
       <!-- Labels -->
       <label for="name">Your name</label>
-      <input type="text" id="name" name="name" placeholder="Full name"/><br>
+      <input type="text" id="name" name="name" placeholder="Full name" /><br />
       <label for="phone">Phone number</label>
-      <input type="tel" id="phone"name="phone" placeholder="Please add your area code!"/><br>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Please add your area code!"
+      /><br />
       <label for="email">Email</label>
-      <input type="text" id="email" name="email" placeholder="Please add your e-mail!"/>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Please add your e-mail!"
+      />
       <!-- Message Area-->
-      <legend style="text-align: center;">Your Requests</legend>
+      <legend style="text-align: center">Your Requests</legend>
       <label for="comments"></label>
       <!-- Message Box-->
       <div align="center">
-        <textarea id="comments" name="comments" placeholder="Please tell me about all things!"></textarea>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Please tell me about all things!"
+        ></textarea>
       </div>
       <!-- Form End -->
     </fieldset>
