@@ -51,6 +51,8 @@ label {
 textarea {
   align-self:center;
   padding: 1rem;
+  box-sizing: content-box;
+  width: 70%;
 }
 
 button:hover {
