@@ -7,12 +7,21 @@
     <title>Responsive_Webpage</title>
   </head>
   <body>
-    <nav id="navbar" class="w3-show">
-      <a class="active" href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </nav>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+          <ul>
+            <li><a href="#">SubMenu1</a></li>
+            <li>
+              <a  href="#">SubMenu2</a>
+            </li>
+            <li><a href="#">SubMenu3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Form</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     <!-- Text -->
     <h1>Wellcome</h1>
     <p>
@@ -32,22 +41,24 @@
       <!-- Legend: it writes text above the border-->
       <legend>Your contact information</legend>
       <!-- Labels -->
-      <label for="name">Your name</label>
-      <input type="text" id="name" name="name" placeholder="Full name" /><br />
-      <label for="phone">Phone number</label>
+      <div>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Full name" />
+    </div>
+      <div><label for="phone">Phone Number</label>
       <input
         type="tel"
         id="phone"
         name="phone"
         placeholder="Please add your area code!"
-      /><br />
+      /></div><div>
       <label for="email">Email</label>
       <input
         type="text"
         id="email"
         name="email"
         placeholder="Please add your e-mail!"
-      />
+      /></div>
       <!-- Message Area-->
       <legend style="text-align: center">Your Requests</legend>
       <label for="comments"></label>
