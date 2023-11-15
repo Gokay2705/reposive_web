@@ -112,5 +112,8 @@ nav a:hover {
 }
 
 button {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: baseline;
 }
