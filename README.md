@@ -1,2 +1,2 @@
 # reposive_web
-<a href="index.html"></a>
+<a href="/index.html"></a>
