@@ -99,3 +99,10 @@ nav a:hover {
   background-color: black;
   color: yellowgreen;
 }
+
+.logo {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
