@@ -4,10 +4,13 @@
 *:after {
   box-sizing: inherit;
 }
+
 /* Let space around of page */
 html {
   margin: 1rem;
+  box-sizing: border-box;
 }
+
 /* Background and text default color of page */
 body {
   background-color: #002d62;
@@ -15,11 +18,11 @@ body {
 }
 
 /* Text style */
-h1 {
+header {
   text-align: center;
   font-family: "Shadows Into Light", cursive;
   color: yellow;
-  font-size: 3rem;
+  font-size: 1.7rem;
 }
 
 p {
@@ -64,14 +67,35 @@ button:hover {
 }
 
 /* nav menu*/
-nav {
-  color: aliceblue;
-  font-size: 1.2em; 
-}
 
 label {
   align-self: center;
   padding: 1rem;
   box-sizing: content-box;
   width: 13%;
+}
+
+nav {
+  border-bottom: 1px solid #a61f11;
+  border-top: 1px solid #da0090;
+  font-size: 1.2em;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  color: yellow;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+nav a:hover {
+  background-color: black;
+  color: yellowgreen;
 }
