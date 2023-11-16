@@ -17,6 +17,14 @@ body {
   color: aliceblue;
 }
 
+/* Logo Picture */
+.logo {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  height: 70px;
+}
+
 /* Text style */
 header {
   text-align: center;
@@ -55,22 +63,14 @@ label {
   padding: 0.3rem;
 }
 
-/* Message Area*/
-
+/* Form */
+/* Message Area */
 textarea {
   align-self: center;
   padding: 1rem;
   box-sizing: content-box;
   width: 70%;
 }
-
-/* Submit button*/
-button:hover {
-  color: whitesmoke;
-  background-color: yellowgreen;
-}
-
-/* nav menu*/
 
 label {
   align-self: center;
@@ -79,41 +79,81 @@ label {
   width: 13%;
 }
 
+/* Submit button */
+button:hover {
+  color: whitesmoke;
+  background-color: yellowgreen;
+}
+
+/* Submit button position */
+.submit-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* Navigation Menu*/
+
 nav {
   border-bottom: 1px solid #a61f11;
   border-top: 1px solid #da0090;
   font-size: 1.2em;
 }
-nav ul {
+
+ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
-nav li {
+
+li {
   display: inline-block;
 }
+
 nav a {
   text-decoration: none;
   color: yellow;
   display: block;
   padding: 0.5rem 1rem;
 }
+
 nav a:hover {
-  background-color: black;
+  background-color: rgba(27, 22, 180, 0.381);
   color: yellowgreen;
 }
 
-.logo {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  height: 70px;
+/* Dropdown Menu */
+
+li .dropdown {
+  display: inline-block;
+  position: relative;
 }
 
-.submit-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: baseline;
+a .dropdown-menu {
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-item {
+  display: none;
+  position: absolute;
+  background-color: #002d62;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Sub-Links */
+.dropdown-item a {
+  color: yellowgreen;
+  padding: 0.8rem 1rem;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-item {
+  display: grid;
 }

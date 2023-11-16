@@ -3,21 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Responsive_Webpage</title>
   </head>
   <body>
     <nav>
       <ul>
-        <li>
-          <a href="#">Home</a>
-          <ul>
-            <li><a href="#">SubMenu1</a></li>
-            <li>
-              <a href="#">SubMenu2</a>
-            </li>
-            <li><a href="#">SubMenu3</a></li>
-          </ul>
+        <li class="dropdown">
+          <a class="dropdown-menu" href="#">Home</a>
+          <div class="dropdown-item">
+            <a href="#">SubMenu1</a>
+            <a href="#">SubMenu2</a>
+            <a href="#">SubMenu3</a>
+          </div>
         </li>
         <li><a href="#">Form</a></li>
         <li><a href="#">Contact</a></li>
