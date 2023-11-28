@@ -157,3 +157,12 @@ a .dropdown-menu {
 .dropdown:hover .dropdown-item {
   display: grid;
 }
+
+ul input[type=text] {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  float: right;
+  padding: 6px;
+  border: black;
+  font-size: 1rem;
+}
