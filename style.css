@@ -13,16 +13,18 @@ html {
 
 /* Background and text default color of page */
 body {
-  background-color: #002d62;
+  background-color: black;
   color: aliceblue;
+  opacity: 80%;
 }
 
 /* Logo Picture */
 .logo {
   padding-top: 1rem;
   padding-right: 1rem;
-  display: flex;
-  height: 70px;
+  float: flex;
+  display: inline;
+  height: 2.3rem;
 }
 
 /* Text style */
@@ -91,14 +93,15 @@ button:hover {
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
+  padding-top: 0.7rem;
 }
 
 /* Navigation Menu*/
 
-nav {
-  border-bottom: 1px solid #a61f11;
-  border-top: 1px solid #da0090;
+.nav {
   font-size: 1.2em;
+  text-align: center;
+  display: inline-block;
 }
 
 ul {
@@ -112,26 +115,26 @@ li {
   display: inline-block;
 }
 
-nav a {
+.nav a {
   text-decoration: none;
   color: yellow;
   display: block;
   padding: 0.5rem 1rem;
 }
 
-nav a:hover {
+.nav a:hover {
   background-color: rgba(27, 22, 180, 0.381);
   color: yellowgreen;
 }
 
 /* Dropdown Menu */
 
-li .dropdown {
+li dropdown {
   display: inline-block;
   position: relative;
 }
 
-a .dropdown-menu {
+a dropdown-menu {
   display: inline-block;
   text-align: center;
   padding: 0.7rem 1rem;
@@ -141,7 +144,7 @@ a .dropdown-menu {
 .dropdown-item {
   display: none;
   position: absolute;
-  background-color: #002d62;
+  background-color: #24272b;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
@@ -158,11 +161,29 @@ a .dropdown-menu {
   display: grid;
 }
 
-ul input[type=text] {
-  margin-top: 3px;
-  margin-bottom: 3px;
+.form {
+  width: 47%;
   float: right;
-  padding: 6px;
+}
+.text-1 {
+  margin-right: 50%;
+  height: auto;
+}
+.text-2 {
+  background-color: white;
+  color: black;
+  margin-top: 25%;
+}
+
+.main-nav {
+  border-bottom: 1px solid #a61f11;
+  border-top: 1px solid #da0090;
+  float: none;
+}
+.up-buttons {
+  float: right;
   border: black;
   font-size: 1rem;
+  margin: 0.7rem;
+  padding: 3px;
 }

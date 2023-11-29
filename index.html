@@ -7,28 +7,108 @@
     <title>Responsive_Webpage</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li class="dropdown">
-          <a class="dropdown-menu" href="#">Home</a>
-          <div class="dropdown-item">
-            <a href="#">SubMenu1</a>
-            <a href="#">SubMenu2</a>
-            <a href="#">SubMenu3</a>
-          </div>
-        </li>
-        <li><a href="#">Form</a></li>
-        <li><a href="#">Contact</a></li>
-        <input type="text" placeholder="Search..">
-      </ul>
-      
-    </nav>
+    <div class="main-nav">
+      <img class="logo" src="/images/Wellcome_Trust_logo.svg.png" />
+      <div class="nav">
+        <ul>
+          <li class="dropdown">
+            <a class="dropdown-menu" href="#">Home</a>
+            <div class="dropdown-item">
+              <a href="#">SubMenu1</a>
+              <a href="#">SubMenu2</a>
+              <a href="#">SubMenu3</a>
+            </div>
+          </li>
+          <li><a href="#">Form</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="up-buttons">
+        <input type="text" placeholder="Search.." />
+        <button type="submit">Sign In</button>
+        <button type="submit">Sign Up</button>
+      </div>
+    </div>
+
     <!-- Text -->
-    <header>
+    <!--
+      <header>
       <img class="logo" src="/images/Wellcome_Trust_logo.svg.png" />
       <h1>Wellcome</h1>
     </header>
-    <article>
+    -->
+
+    <div>
+      <div class="form">
+        <form>
+          <fieldset>
+            <!-- Form -->
+            <!-- Legend: it writes text above the border-->
+            <legend>Your contact information</legend>
+            <!-- Labels -->
+            <div>
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full name"
+              />
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Please add your area code!"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Please add your e-mail!"
+              />
+            </div>
+            <!-- Message Area-->
+            <legend style="text-align: center">Your Requests</legend>
+            <label for="comments"></label>
+            <!-- Message Box-->
+            <div align="center">
+              <textarea
+                id="comments"
+                name="comments"
+                placeholder="Please tell me about all things!"
+              ></textarea>
+            </div>
+
+            <div class="submit-button">
+              <button type="submit">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+        <!-- Form End -->
+      </div>
+      <div class="text-1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor
+          purus non enim praesent elementum. Rutrum tellus pellentesque eu
+          tincidunt tortor aliquam nulla. Sit amet volutpat consequat mauris
+          nunc congue nisi vitae suscipit. Tellus rutrum tellus pellentesque eu
+          tincidunt tortor. Id donec ultrices tincidunt arcu non sodales.
+          Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Ut
+          etiam sit amet nisl purus in mollis. Aliquet sagittis id consectetur
+          purus. Ligula ullamcorper malesuada proin libero nunc. Leo in vitae
+          turpis massa sed. Aliquam malesuada bibendum arcu vitae elementum
+          curabitur vitae nunc sed....
+        </p>
+      </div>
+    </div>
+    <div class="text-2">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Dolor purus non enim
@@ -42,51 +122,6 @@
         malesuada bibendum arcu vitae elementum curabitur vitae nunc sed....
       </p>
       <p><a href="/index.html">Continue reading...</a></p>
-    </article>
-    <form>
-      <fieldset>
-        <!-- Form -->
-        <!-- Legend: it writes text above the border-->
-        <legend>Your contact information</legend>
-        <!-- Labels -->
-        <div>
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Full name" />
-        </div>
-        <div>
-          <label for="phone">Phone Number</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="Please add your area code!"
-          />
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Please add your e-mail!"
-          />
-        </div>
-        <!-- Message Area-->
-        <legend style="text-align: center">Your Requests</legend>
-        <label for="comments"></label>
-        <!-- Message Box-->
-        <div align="center">
-          <textarea
-            id="comments"
-            name="comments"
-            placeholder="Please tell me about all things!"
-          ></textarea>
-        </div>
-        <!-- Form End -->
-      </fieldset>
-      <div class="submit-button">
-      <button type="submit">Submit</button>
     </div>
-    </form>
   </body>
 </html>
