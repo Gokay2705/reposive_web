@@ -56,7 +56,7 @@ fieldset {
   border: 5px solid yellowgreen;
   border-radius: 10px;
   margin-bottom: 2rem;
-  display:block;
+  display: flex;
   flex-direction: column;
 }
 
@@ -165,17 +165,17 @@ a dropdown-menu {
   display: grid;
 }
 
-.form {
+.forms {
   width: 47%;
   float: right;
 }
 .text-1 {
-  margin-right: 50%;
+  width: 50%;
+  float: left;
+  height: max-content;
 }
 .text-1 p {
-  height: 333px;
   justify-content: center;
-  display: flexbox;
   flex-direction: column;
   text-align: center;
 }
@@ -187,7 +187,6 @@ a dropdown-menu {
 }
 .text-2 p {
   justify-content: center;
-  display: flexbox;
   flex-direction: column;
   text-align: center;
   padding: 1rem;
@@ -203,4 +202,16 @@ a dropdown-menu {
   font-size: 1rem;
   margin: 0.7rem;
   padding: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-1 {
+    width: 100%;
+    height: max-content;
+  }
+  .forms {
+    position: relative;
+    margin: auto;
+    float: none;
+  }
 }
