@@ -44,11 +44,20 @@ p {
   font-size: 1.2rem;
 }
 
+h1 {
+  text-align: center;
+  color: #a61f11;
+  text-decoration: wavy;
+}
+
 /* Form style */
+
 fieldset {
   border: 5px solid yellowgreen;
   border-radius: 10px;
   margin-bottom: 2rem;
+  display:block;
+  flex-direction: column;
 }
 
 legend {
@@ -58,11 +67,6 @@ legend {
   margin-bottom: 1rem;
   display: block;
   font-family: "Shadows Into Light", cursive;
-}
-
-label {
-  display: inline-flex;
-  padding: 0.3rem;
 }
 
 /* Form */
@@ -75,10 +79,10 @@ textarea {
 }
 
 label {
-  align-self: center;
-  padding: 1rem;
+  display: inline-flex;
+  padding: 0.3rem;
   box-sizing: content-box;
-  width: 13%;
+  width: 23%;
 }
 
 /* Submit button */
@@ -167,14 +171,27 @@ a dropdown-menu {
 }
 .text-1 {
   margin-right: 50%;
-  height: auto;
+}
+.text-1 p {
+  height: 333px;
+  justify-content: center;
+  display: flexbox;
+  flex-direction: column;
+  text-align: center;
 }
 .text-2 {
   background-color: white;
   color: black;
-  margin-top: 25%;
+  margin-top: 3rem;
+  float: inline-end;
 }
-
+.text-2 p {
+  justify-content: center;
+  display: flexbox;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
 .main-nav {
   border-bottom: 1px solid #a61f11;
   border-top: 1px solid #da0090;
