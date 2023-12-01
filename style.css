@@ -15,7 +15,6 @@ html {
 body {
   background-color: black;
   color: aliceblue;
-  opacity: 80%;
 }
 
 /* Logo Picture */
@@ -53,11 +52,12 @@ h1 {
 /* Form style */
 
 fieldset {
-  border: 5px solid yellowgreen;
-  border-radius: 10px;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
+  color: #24272b;
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
 }
 
 legend {
@@ -65,8 +65,10 @@ legend {
   font-weight: bold;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  padding-top: 1.3rem;
   display: block;
   font-family: "Shadows Into Light", cursive;
+  color: #a61f11;
 }
 
 /* Form */
@@ -89,6 +91,7 @@ label {
 button {
   background-color: #14FF01;
   width: 13rem;
+  cursor: pointer;
 }
 
 button:hover {
@@ -173,22 +176,26 @@ a dropdown-menu {
 .forms {
   width: 47%;
   float: right;
+
 }
 .text-1 {
   width: 50%;
   float: left;
   height: max-content;
+  opacity: 0.7;
+  padding: 5rem;
 }
 .text-1 p {
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
 .text-2 {
   background-color: white;
   color: black;
   margin-top: 3rem;
   float: inline-end;
+  opacity: none;
 }
 .text-2 p {
   justify-content: center;
@@ -196,11 +203,21 @@ a dropdown-menu {
   text-align: center;
   padding: 1rem;
 }
+
+.text-2 a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
 .main-nav {
   border-bottom: 1px solid #a61f11;
   border-top: 1px solid #da0090;
   float: none;
 }
+
 .up-buttons {
   float: right;
   border: black;
@@ -208,7 +225,7 @@ a dropdown-menu {
   margin: 0.7rem;
   padding: 3px;
 }
-.up-buttons a{
+.up-buttons a {
   text-decoration: none;
   color: white;
   display: inline-block;
@@ -217,26 +234,33 @@ a dropdown-menu {
   font:bold;
 }
 
-.text-2 .signin {
-  border: solid 5px #14FF01;
-  border-radius: 20%;
-  
-  text-align: center;
-  margin-bottom: 1.7rem;
-  background-color: white;
+.signin-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin: 1rem;
 }
 
-  .signin a {
+.signin-button a {
   text-decoration: none;
-  color: blue;
-  width: auto;
+  border: rgba(145, 140, 140, 0.605) solid 5px;
+  border-radius: 13%;
+  padding: 0.3rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, blue;
 }
 
 @media screen and (max-width: 768px) {
   .text-1 {
     width: 100%;
     height: max-content;
-  }
+    padding: 0;
+    }
+  .text-1 p {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    }
   .forms {
     position: relative;
     margin: auto;
@@ -247,6 +271,9 @@ a dropdown-menu {
 @media screen and (max-width: 430px) {
   .forms {
     display:none;
+  }
+  .submit-button {
+    display:inline-block;
   }
 }
 
