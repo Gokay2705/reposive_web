@@ -86,9 +86,14 @@ label {
 }
 
 /* Submit button */
+button {
+  background-color: #14FF01;
+  width: 13rem;
+}
+
 button:hover {
   color: whitesmoke;
-  background-color: yellowgreen;
+  background-color: black;
 }
 
 /* Submit button position */
@@ -121,14 +126,14 @@ li {
 
 .nav a {
   text-decoration: none;
-  color: yellow;
+  color:white;
   display: block;
   padding: 0.5rem 1rem;
 }
 
 .nav a:hover {
   background-color: rgba(27, 22, 180, 0.381);
-  color: yellowgreen;
+  color: white;
 }
 
 /* Dropdown Menu */
@@ -155,7 +160,7 @@ a dropdown-menu {
 
 /* Sub-Links */
 .dropdown-item a {
-  color: yellowgreen;
+  color: white;
   padding: 0.8rem 1rem;
   display: block;
   text-align: left;
@@ -203,6 +208,29 @@ a dropdown-menu {
   margin: 0.7rem;
   padding: 3px;
 }
+.up-buttons a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 5rem;
+  text-align: center;
+  font:bold;
+}
+
+.text-2 .signin {
+  border: solid 5px #14FF01;
+  border-radius: 20%;
+  
+  text-align: center;
+  margin-bottom: 1.7rem;
+  background-color: white;
+}
+
+  .signin a {
+  text-decoration: none;
+  color: blue;
+  width: auto;
+}
 
 @media screen and (max-width: 768px) {
   .text-1 {
@@ -215,3 +243,10 @@ a dropdown-menu {
     float: none;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .forms {
+    display:none;
+  }
+}
+
