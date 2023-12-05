@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="style v1.css" />
     <title>Responsive_Webpage</title>
   </head>
+
   <body>
-    <div class="main-nav">
+    <nav>
       <img class="logo" src="/images/Wellcome_Trust_logo.svg.png" />
-      <div class="nav">
-        <ul>
-          <li class="dropdown">
-            <a class="dropdown-menu" href="#">Home</a>
-            <div class="dropdown-item">
+      <ul>
+        <span class="menu">
+          <li>
+            <a href="#">Home</a>
+            <div class="dropdown">
               <a href="#">SubMenu1</a>
               <a href="#">SubMenu2</a>
               <a href="#">SubMenu3</a>
@@ -21,105 +22,16 @@
           </li>
           <li><a href="#">Form</a></li>
           <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="up-buttons">
-        <input type="text" placeholder="Search.." />
-        <a href="#">Sign-In</a>
-        <a href="#">Sign-Up</a>
-      </div>
-    </div>
-    <!-- Form -->
-    <div>
-      <div class="text-1">
-        <h1>Wellcomme</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          <br /><br />
-          Dolor purus non enim praesent elementum. Rutrum tellus pellentesque eu
-          tincidunt tortor aliquam nulla. <br /><br /><em
-            >Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit.
-            Tellus rutrum tellus pellentesque eu tincidunt tortor. Id donec
-            ultrices tincidunt arcu non sodales.</em
-          >
-        </p>
-      </div>
-      <div class="forms">
-        <form>
-          <fieldset>
-            <!-- Legend: it writes text above the border-->
-            <legend>Your contact information</legend>
-            <!-- Labels -->
-            <div>
-              <label for="name">Your Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Full name"
-              />
-            </div>
-            <div>
-              <label for="phone">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Please add your area code!"
-              />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Please add your e-mail!"
-              />
-            </div>
-            <!-- Message Area-->
-            <legend style="text-align: center">Your Requests</legend>
-            <label for="comments"></label>
-            <!-- Message Box-->
-            <div align="center">
-              <textarea
-                id="comments"
-                name="comments"
-                placeholder="Please tell me about all things!"
-              ></textarea>
-            </div>
-            <div class="submit-button">
-              <button type="submit">Submit</button>
-            </div>
-          </fieldset>
-        </form>
-        <!-- Form End -->
-        <div class="submit-button-2">
-          <button type="submit">Submit</button>
-        </div>
-      </div>
-
-      <div class="text-2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor
-          purus non enim praesent elementum. Rutrum tellus pellentesque eu
-          tincidunt tortor aliquam nulla. Sit amet volutpat consequat mauris
-          nunc congue nisi vitae suscipit. Tellus rutrum tellus pellentesque eu
-          tincidunt tortor. Id donec ultrices tincidunt arcu non sodales.
-          Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Ut
-          etiam sit amet nisl purus in mollis. Aliquet sagittis id consectetur
-          purus. Ligula ullamcorper malesuada proin libero nunc. Leo in vitae
-          turpis massa sed. Aliquam malesuada bibendum arcu vitae elementum
-          curabitur vitae nunc sed....
-        </p>
-        <a href="/index.html">Continue reading...</a>
-        <div class="signin-button">
-        <a href="#">Sign-Up Your Github</a>
-        </div>
-        </div>
-      </div>
-    </div>
+        </span>
+        <span class="up-buttons">
+          <li>
+            <input type="text" placeholder="Search.." />
+          </li>
+          <li><a href="#">Sign-In</a></li>
+          <li><a href="#">Sign-Up</a></li>
+        </span>
+      </ul>
+    </nav>
+    <main></main>
   </body>
 </html>

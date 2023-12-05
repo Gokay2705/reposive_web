@@ -150,7 +150,7 @@ li dropdown {
   position: relative;
 }
 
-a dropdown-menu {
+a .dropdown-menu {
   display: inline-block;
   text-align: center;
   padding: 0.7rem 1rem;
