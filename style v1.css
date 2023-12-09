@@ -10,6 +10,9 @@
   background-color: black;
   box-sizing: border-box;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Navigation Menu Copmlet*/
@@ -18,8 +21,8 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -30,48 +33,43 @@ nav {
 .up-buttons {
   padding-left: 15vmax;
   display: inline-block;
+  font-style: bold;
+  font-size: 1.3rem;
 }
 
-.menu {
-  padding-left: 10vmax;
-  display: inline-block;
-}
-
-ul {
+nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-li {
+nav ul li {
   display: inline-block;
   position: relative;
 }
 
-li a {
+nav ul li a {
   display: inline-block;
   padding: 0.7rem 1rem;
   text-decoration: none;
   color: white;
 }
 
-ul .dropdown {
+nav ul li ul {
   display: none;
-  position: absolute;
-  min-width: 120px;
+  position: relative;
+  min-width:7rem;
 }
 
-a .dropdown {
-  padding: 0.8rem 1rem;
-  display: inline-block;
-  text-align: left;
-}
-
-li:hover .dropdown {
+nav ul li:hover > ul {
   display: grid;
 }
+/* End Navigation Menu*/
 
-/* Section */
+/* I'm still working on this part :-) */
+
+/* Section and Form */
+
 .text-1 {
   width: 50%;
   float: left;
@@ -81,16 +79,8 @@ li:hover .dropdown {
 }
 
 .text-1 p {
-  justify-content: center;
-  flex-direction: column;
   text-align: left;
 }
-
-
-
-
-
-
 
 /* Form */
 
@@ -99,8 +89,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   color: #24272b;
-  background-color: rgb(255, 255, 255);
-  opacity: 1;
+  background-color: white;
 }
 
 legend {
@@ -108,13 +97,13 @@ legend {
   font-weight: bold;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  padding-top: 1.3rem;
-  display: block;
+  display: inline-block;
   font-family: "Shadows Into Light", cursive;
   color: #a61f11;
+  background-color: white;
+  text-align: center;
 }
 
-/* Form */
 textarea {
   align-self: center;
   padding: 1rem;
@@ -131,14 +120,16 @@ label {
 
 /* Submit button */
 button {
-  background-color: #14FF01;
+  background-color: black;
+  color: white;
   width: 13rem;
   cursor: pointer;
 }
 
 button:hover {
-  color: whitesmoke;
-  background-color: black;
+  color: black;
+  background-color: white;
+  font-style: bold;
 }
 
 /* Submit button position */
@@ -154,26 +145,72 @@ button:hover {
   display: none;
 }
 
+/* End Section and Form */
 
+.text-2 {
+  background-color: white;
+  color: black;
+  margin-top: 3rem;
+  float: inline-end;
+  opacity: none;
+}
+.text-2 p {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
 
+.text-2 a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0.3rem;
+  cursor: pointer;
+}
 
+.signin-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin: 1rem;
+}
 
+.signin-button a {
+  text-decoration: none;
+  border: black solid 2px;
+  border-radius: 33%;
+  color: white;
+  background-color: black;
+  padding: 0.3rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-
+/* @media */
 @media screen and (max-width: 768px) {
   .text-1 {
     width: 100%;
     height: max-content;
     padding: 0;
-    }
+  }
   .text-1 p {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    }
-  .forms {
-    position: relative;
-    margin: auto;
-    float: none;
   }
 }
+
+@media screen and (max-width: 430px) {
+  form {
+    display:none;
+  }
+  .submit-button-2 {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 0.7rem;
+  }
+}
+
