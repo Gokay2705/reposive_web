@@ -85,7 +85,7 @@ nav ul li:hover > ul {
 /* Form */
 
 fieldset {
-  margin-bottom: 2rem;
+  margin-bottom: -1rem;
   display: flex;
   flex-direction: column;
   color: #24272b;
