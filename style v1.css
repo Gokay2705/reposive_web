@@ -63,7 +63,7 @@ nav ul li ul {
 }
 
 nav ul li:hover > ul {
-  display: grid;
+  display:grid;
 }
 /* End Navigation Menu*/
 
@@ -225,10 +225,46 @@ button:hover {
     flex-direction: column;
     text-align: center;
   }
-  nav ul,
+
+  nav ul {
+    position: absolute;
+    background-color: black;
+    top: 8vh;
+    right: 0;
+    width: 9rem;
+    height: 9rem;
+    flex-flow: column wrap;
+    align-items: left;
+    justify-content:center;
+    transform: translateX(100%);
+    padding-top: 1rem;
+    overflow: hidden;
+    }
   li {
-    display: none;
-  }
+      display: none;
+      position: static;
+      text-align: left;
+      padding-left: .7rem;
+     }
+     .close .line1 {
+      transform: rotate(-45deg) translate(-5px, 3px);
+      background-color: red;
+    }
+  
+    .close .line2 {
+      opacity: 0;
+    }
+  
+    .close .line3 {
+      transform: rotate(45deg) translate(-5px, -3px);
+      background-color: red;
+    }
+
+    .nav-active {
+      transform: translateX(0);
+    }
+
+
   .logo {
     display: flex;
     height: 2.3rem;
